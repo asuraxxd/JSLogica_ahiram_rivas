@@ -22,3 +22,25 @@ function dinsRang(x, y) {
     console.log(yEstà);
 }
 dinsRang(25, 60); // Prova amb dos números
+
+//3.- Donat un enter (x), mostra per pantalla la qualificació de l’examen:
+
+function qualificacio(x) {
+    if (x >= 0 && x <= 4.99) {
+        console.log("Suspès");
+    } else if (x >= 5 && x <= 5.99) {
+        console.log("Suficient");
+    } else if (x >= 6 && x <= 6.99) {
+        console.log("Bé");
+    } else if (x >= 7 && x <= 8.99) {
+        console.log("Notable");
+    } else if (x >= 9 && x <= 10) {
+        console.log("Excel·lent");
+    } else {
+        console.log("Nota no vàlida");
+    }
+}
+qualificacio(7.5); // Prova amb una nota
+
+
+
