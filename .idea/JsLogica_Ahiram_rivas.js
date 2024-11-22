@@ -64,3 +64,16 @@ function multipleSwitch(numero) {
 }
 multipleSwitch(21); // Prova amb un número
 
+
+//5.- Donat un enter (x), troba el màxim número n tal que 1+2+3+...+n <= x
+
+function sumaMaxima(x) {
+    let suma = 0, n = 0;
+    while (suma + (n + 1) <= x) {
+        n++;
+        suma += n;
+    }
+    console.log(`El màxim n és ${n} (suma = ${suma})`);
+}
+sumaMaxima(15); // Prova amb un valor
+
