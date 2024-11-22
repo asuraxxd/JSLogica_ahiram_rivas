@@ -138,3 +138,13 @@ function sumarMultiples() {
 }
 sumarMultiples();
 
+//11.- Modifica l’exercici 9 perquè només mostri les línies amb estrelles imparelles. Utilitza la
+// sentència continue.
+
+function patroImparell(x) {
+    for (let i = 1; i <= x; i++) {
+        if (i % 2 === 0) continue;
+        console.log("* ".repeat(i));
+    }
+}
+patroImparell(5); // Prova amb un valor
