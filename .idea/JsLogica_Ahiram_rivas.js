@@ -100,3 +100,13 @@ function ordenarTres(x, y, z) {
 }
 ordenarTres(5, 1, 9); // Prova amb tres números
 
+
+//8.- Donat un enter (x), fes un bucle que digui des del 0 a x, quins són parells i quins senars.
+
+function parellsISenars(x) {
+    for (let i = 0; i <= x; i++) {
+        console.log(`${i} és ${i % 2 === 0 ? 'parell' : 'senar'}`);
+    }
+}
+parellsISenars(10); // Prova amb un número
+
