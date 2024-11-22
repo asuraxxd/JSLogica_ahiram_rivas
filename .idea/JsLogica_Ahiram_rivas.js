@@ -110,3 +110,18 @@ function parellsISenars(x) {
 }
 parellsISenars(10); // Prova amb un número
 
+
+//9.- Realitza una funció que, utilitzant bucles, mostri per pantalla el següent patró:
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
+
+function patroEstrelles(x) {
+    for (let i = 1; i <= x; i++) {
+        console.log("* ".repeat(i));
+    }
+}
+patroEstrelles(5); // Prova amb un valor
+
