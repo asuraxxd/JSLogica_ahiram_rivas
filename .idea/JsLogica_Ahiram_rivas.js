@@ -91,3 +91,12 @@ function sumaCaractersNumerics(x) {
 }
 sumaCaractersNumerics("123abc45"); // Prova amb un string
 
+
+//7.- Donat tres enters, ordena de major a menor.
+
+function ordenarTres(x, y, z) {
+    let numeros = [x, y, z].sort((a, b) => b - a);
+    console.log(`Ordenats: ${numeros}`);
+}
+ordenarTres(5, 1, 9); // Prova amb tres números
+
