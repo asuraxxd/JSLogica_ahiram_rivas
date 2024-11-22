@@ -11,3 +11,14 @@ function esMultiple(numero) {
     }
 }
 esMultiple(21); // Prova amb un número
+
+//2.- Donats dos enters (x, y), dir quins d’ells estan en el rang de 10 a 50 inclosos. Utilitza un
+// operador ternari.
+
+function dinsRang(x, y) {
+    let xEstà = (x >= 10 && x <= 50) ? `${x} està en el rang` : `${x} no està en el rang`;
+    let yEstà = (y >= 10 && y <= 50) ? `${y} està en el rang` : `${y} no està en el rang`;
+    console.log(xEstà);
+    console.log(yEstà);
+}
+dinsRang(25, 60); // Prova amb dos números
