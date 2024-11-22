@@ -148,3 +148,19 @@ function patroImparell(x) {
     }
 }
 patroImparell(5); // Prova amb un valor
+
+//12.- Donat un enter de longitud par, intercanvia els dígits adjacents. Exemple: 123456 → 214365
+
+function intercanviarDigits(x) {
+    let str = x.toString();
+    if (str.length % 2 !== 0) {
+        console.log("El número no té longitud parella.");
+        return;
+    }
+    let resultat = "";
+    for (let i = 0; i < str.length; i += 2) {
+        resultat += str[i + 1] + str[i];
+    }
+    console.log(`Resultat: ${resultat}`);
+}
+intercanviarDigits(123456); // Prova amb un número
