@@ -125,3 +125,16 @@ function patroEstrelles(x) {
 }
 patroEstrelles(5); // Prova amb un valor
 
+
+//10.- Utilitza un do..while per sumar els múltiples de 3 i 5 fins al número 1000.
+
+function sumarMultiples() {
+    let suma = 0, i = 0;
+    do {
+        if (i % 3 === 0 || i % 5 === 0) suma += i;
+        i++;
+    } while (i <= 1000);
+    console.log(`La suma és: ${suma}`);
+}
+sumarMultiples();
+
