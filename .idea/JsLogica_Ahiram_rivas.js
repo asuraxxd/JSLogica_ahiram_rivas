@@ -77,3 +77,17 @@ function sumaMaxima(x) {
 }
 sumaMaxima(15); // Prova amb un valor
 
+
+//6.- Donat un String (x), sumar els caràcters que siguin números.
+
+function sumaCaractersNumerics(x) {
+    let suma = 0;
+    for (let char of x) {
+        if (!isNaN(char) && char !== ' ') {
+            suma += parseInt(char);
+        }
+    }
+    console.log(`La suma dels números és: ${suma}`);
+}
+sumaCaractersNumerics("123abc45"); // Prova amb un string
+
