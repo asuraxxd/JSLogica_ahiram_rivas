@@ -43,4 +43,24 @@ function qualificacio(x) {
 qualificacio(7.5); // Prova amb una nota
 
 
+//4.- Modifica l’exercici 1, perquè mostri el text: és múltiple de 3, de 7 o de 3 i 7 utilitzant un switch.
+
+function multipleSwitch(numero) {
+    let text = "";
+    switch (true) {
+        case numero % 3 === 0 && numero % 7 === 0:
+            text = "És múltiple de 3 i de 7";
+            break;
+        case numero % 3 === 0:
+            text = "És múltiple de 3";
+            break;
+        case numero % 7 === 0:
+            text = "És múltiple de 7";
+            break;
+        default:
+            text = "No és múltiple de 3 ni de 7";
+    }
+    console.log(text);
+}
+multipleSwitch(21); // Prova amb un número
 
